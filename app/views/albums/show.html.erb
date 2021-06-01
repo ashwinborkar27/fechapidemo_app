@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @album.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @album.description %>
+</p>
+
+
+<p>
+  <strong>User:</strong>
+  <%= @album.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_album_path(@album), class:'btn btn-mini btn-warning'%> |
+<%= link_to 'Album list', albums_path , class:'btn btn-mini btn-dark'%>|
+<%= link_to 'Create New Photo', new_album_photo_path(@album), class:'btn btn-mini btn-info'%>
+
